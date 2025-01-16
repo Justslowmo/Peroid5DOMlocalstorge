@@ -9,7 +9,7 @@ const clickCountDisplay = document.getElementById('click-count');
         clickCountDisplay.textContent = clickCount;
         updateUI();
 
-//2.Explain what this event listener function does (and what function it calls).
+//2.it displays the click count on the screen and calls the function of cliking  and local storage
         // Add event listener to button
         button.addEventListener('click', () => {
             clickCount++;
@@ -18,7 +18,7 @@ const clickCountDisplay = document.getElementById('click-count');
             updateUI();
         });
 
-//3.Explain what function updateUI does and is holding the colors and texts
+//3.it makes the button constalty update with new text and colors each time you click
         function updateUI() {
             const colors = ['#FF5733', '#33FF57', '#3357FF', '#F5A623', '#E91E63'];
             const texts = [
