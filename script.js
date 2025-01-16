@@ -2,7 +2,7 @@ const clickCountDisplay = document.getElementById('click-count');
         const header = document.getElementById('header');
         const button = document.getElementById('click-button');
        
-//1.Add a comment here explaining the let clickCount variable  
+//1.The left click variable here counts the amount of clicks that the button has sustained and stores it in a storage like file and changes the count +1 
         let clickCount = localStorage.getItem('clickCount') ? parseInt(localStorage.getItem('clickCount')) : 0;
 
         // Update display on load
